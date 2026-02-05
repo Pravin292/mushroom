@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍄 Mushroom Classifier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍄 Mushroom Classifier</h1>
+            <p class="subtitle">Predict mushroom characteristics using AI</p>
+        </header>
+
+        <main>
+            <div class="form-section">
+                <h2>Enter Mushroom Features</h2>
+                <form id="predictionForm">
+                    <div id="featureInputs" class="feature-inputs"></div>
+                    <button type="submit" class="btn-primary">🔍 Predict</button>
+                </form>
+            </div>
+
+            <div id="resultSection" class="result-section hidden">
+                <h2>Prediction Result</h2>
+                <div id="result" class="result-box"></div>
+            </div>
+
+            <div id="errorSection" class="error-section hidden">
+                <p id="errorMessage" class="error-message"></p>
+            </div>
+
+            <div id="loadingIndicator" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Analyzing...</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Mushroom Classifier | Built with ❤️</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
